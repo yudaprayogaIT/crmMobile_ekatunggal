@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
       'Semarang': 'https://apicrm-smg.ekatunggal.com/',
       'Samarinda': 'https://apicrm-smd.ekatunggal.com/',
       'Surabaya': 'https://apicrm-sby.ekatunggal.com/',
-      'Development': 'https://api-crmdev.ekatunggal.com/',
+      'Development': 'https://apicrm-dev.ekatunggal.com/',
     };
     // String? _selectedValue = 'https://apicrm.ekatunggal.com/';
 
@@ -88,7 +88,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             autocorrect: false,
                             decoration: const InputDecoration(
                               labelText: "Username",
-                              hintText: "Cth : ramdhaniit",
+                              hintText: "Masukkan Username Anda",
                               border: OutlineInputBorder(),
                             ),
                           ),
@@ -100,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             autocorrect: false,
                             decoration: InputDecoration(
                               labelText: "Password",
-                              hintText: "",
+                              hintText: "Masukkan Password Anda",
                               border: const OutlineInputBorder(),
                               suffixIcon: IconButton(
                                 onPressed: () {

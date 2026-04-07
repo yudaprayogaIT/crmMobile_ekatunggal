@@ -22,7 +22,7 @@ class UserModelAdapter extends TypeAdapter<UserModel> {
       username: fields[2] as String?,
       img: fields[3] as String?,
       email: fields[4] as String?,
-      phone: fields[5] as num?,
+      phone: fields[5] as String?,
       status: fields[6] as String?,
       workflowState: fields[7] as String?,
       createdAt: fields[8] as DateTime?,

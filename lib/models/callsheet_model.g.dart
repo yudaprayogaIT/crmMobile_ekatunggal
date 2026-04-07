@@ -181,7 +181,7 @@ class ContactAdapter extends TypeAdapter<Contact> {
     return Contact(
       id: fields[0] as String?,
       name: fields[1] as String?,
-      phone: fields[3] as num?,
+      phone: fields[3] as String?,
       position: fields[2] as String?,
     );
   }

@@ -216,7 +216,7 @@ class Contact extends HiveObject {
   String? position;
 
   @HiveField(3)
-  num? phone;
+  String? phone;
 
   Contact({
     this.id,
@@ -228,8 +228,8 @@ class Contact extends HiveObject {
   factory Contact.fromJson(Map<String, dynamic> json) => Contact(
         id: json["_id"],
         name: json["name"],
-        phone: json["phone"],
-        position: json["position"],
+        phone: json["phone"]?.toString(),
+        position: json["position"]?.toString(),
       );
 
   Map<String, dynamic> toJson() => {

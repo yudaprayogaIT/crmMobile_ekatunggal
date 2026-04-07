@@ -20,7 +20,7 @@ class UserModel extends HiveObject {
   String? email;
 
   @HiveField(5)
-  num? phone;
+  String? phone;
 
   @HiveField(6)
   String? status;
@@ -80,7 +80,7 @@ class UserModel extends HiveObject {
         id: json["_id"],
         name: json["name"],
         username: json["username"],
-        phone: json["phone"],
+        phone: json["phone"]?.toString(),
         img: json["img"],
         email: json["email"],
         status: json["status"],

@@ -29,6 +29,25 @@ class CustomerBloc extends Bloc<CustomerEvent, CustomerState> {
   String search = "";
   String url = "";
 
+  String _formatCustomerError(dynamic error) {
+    final rawError = error.toString();
+
+    if (rawError.contains('11000')) {
+      final duplicateNameMatch = RegExp(
+        r'keyValue:\s*\{name:\s*(.+?)\}',
+      ).firstMatch(rawError);
+      final duplicateName = duplicateNameMatch?.group(1)?.trim();
+
+      if (duplicateName != null && duplicateName.isNotEmpty) {
+        return 'Customer dengan nama "$duplicateName" sudah ada.';
+      }
+
+      return 'Customer dengan nama yang sama sudah ada.';
+    }
+
+    return rawError;
+  }
+
   CustomerBloc() : super(CustomerInitial()) {
     on<ShowCustomer>(_ShowCustomer);
     on<CustomerInsert>(_InsertData);
@@ -201,15 +220,16 @@ class CustomerBloc extends Bloc<CustomerEvent, CustomerState> {
 
       EasyLoading.dismiss();
     } catch (e) {
+      final errorMessage = _formatCustomerError(e);
       Get.defaultDialog(
-        content: Text(e.toString()),
+        content: Text(errorMessage),
         contentPadding: const EdgeInsets.symmetric(
           vertical: 10,
           horizontal: 20,
         ),
       );
       EasyLoading.dismiss();
-      emit(CustomerIsFailure(e.toString()));
+      emit(CustomerIsFailure(errorMessage));
     }
   }
 
