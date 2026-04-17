@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 // import 'package:meta/meta.dart';
-import 'package:salesappnew/models/key_value_model.dart';
-import 'package:salesappnew/models/note_model.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
+import 'package:ekareach/models/key_value_model.dart';
+import 'package:ekareach/models/note_model.dart';
+import 'package:ekareach/utils/fetch_data.dart';
 
 part 'note_event.dart';
 part 'note_state.dart';

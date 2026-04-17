@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 
-import 'package:salesappnew/bloc/field_infinite/field_infinite_bloc.dart';
+import 'package:ekareach/bloc/field_infinite/field_infinite_bloc.dart';
 
 class FieldInfiniteScroll extends StatelessWidget {
   String? placeholder;

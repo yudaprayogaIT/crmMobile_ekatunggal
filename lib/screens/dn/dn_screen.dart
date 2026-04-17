@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/bloc/dn/dn_bloc.dart';
-import 'package:salesappnew/screens/dn/widgets/dn_screen_body.dart';
+import 'package:ekareach/bloc/dn/dn_bloc.dart';
+import 'package:ekareach/screens/dn/widgets/dn_screen_body.dart';
 
-import 'package:salesappnew/widgets/back_button_custom.dart';
+import 'package:ekareach/widgets/back_button_custom.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class DnScreen extends StatefulWidget {

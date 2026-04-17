@@ -5,7 +5,7 @@ import 'package:permission_handler/permission_handler.dart'
     as permission; // Alias untuk 'permission_handler'
 import 'package:flutter/services.dart';
 import 'package:geocoding/geocoding.dart';
-import 'package:salesappnew/models/result_location_model.dart';
+import 'package:ekareach/models/result_location_model.dart';
 
 class LocationGps {
   Future<Position?> CheckLocation() async {

@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:salesappnew/bloc/user/user_bloc.dart';
-import 'package:salesappnew/utils/local_data.dart';
-import 'package:salesappnew/widgets/back_button_custom.dart';
-import 'package:salesappnew/widgets/custom_field.dart';
+import 'package:ekareach/bloc/user/user_bloc.dart';
+import 'package:ekareach/utils/local_data.dart';
+import 'package:ekareach/widgets/back_button_custom.dart';
+import 'package:ekareach/widgets/custom_field.dart';
 
 class UserSetting extends StatefulWidget {
   UserBloc bloc;

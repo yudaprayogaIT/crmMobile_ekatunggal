@@ -2,9 +2,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:salesappnew/bloc/auth/auth_bloc.dart';
-import 'package:salesappnew/bloc/order/order_bloc.dart';
-import 'package:salesappnew/screens/order/widgets/order_body_list.dart';
+import 'package:ekareach/bloc/auth/auth_bloc.dart';
+import 'package:ekareach/bloc/order/order_bloc.dart';
+import 'package:ekareach/screens/order/widgets/order_body_list.dart';
 
 class OrderScreenBody extends StatefulWidget {
   final int status;

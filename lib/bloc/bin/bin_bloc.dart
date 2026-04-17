@@ -2,8 +2,8 @@
 
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:salesappnew/models/bin_model.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
+import 'package:ekareach/models/bin_model.dart';
+import 'package:ekareach/utils/fetch_data.dart';
 
 part 'bin_event.dart';
 part 'bin_state.dart';

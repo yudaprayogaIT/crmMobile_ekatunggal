@@ -1,7 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
+import 'package:ekareach/utils/fetch_data.dart';
 
 Future<List> UserRepositoryGetAll({
   List<String>? fields,

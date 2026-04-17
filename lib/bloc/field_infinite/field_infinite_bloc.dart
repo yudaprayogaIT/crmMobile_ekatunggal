@@ -2,7 +2,7 @@
 
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:salesappnew/widgets/field_infinite_scroll.dart';
+import 'package:ekareach/widgets/field_infinite_scroll.dart';
 
 part 'field_infinite_event.dart';
 part 'field_infinite_state.dart';

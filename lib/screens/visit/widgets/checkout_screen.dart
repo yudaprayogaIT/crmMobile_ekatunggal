@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:salesappnew/bloc/gps/gps_bloc.dart';
-import 'package:salesappnew/bloc/visit/visit_bloc.dart';
-import 'package:salesappnew/screens/visit/widgets/visit_checkout.dart';
-import 'package:salesappnew/widgets/dialog_signature.dart';
+import 'package:ekareach/bloc/gps/gps_bloc.dart';
+import 'package:ekareach/bloc/visit/visit_bloc.dart';
+import 'package:ekareach/screens/visit/widgets/visit_checkout.dart';
+import 'package:ekareach/widgets/dialog_signature.dart';
 
 class CheckOutScreen extends StatelessWidget {
   const CheckOutScreen({super.key});

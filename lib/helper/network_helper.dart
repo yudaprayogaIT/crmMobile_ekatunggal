@@ -2,7 +2,7 @@
 
 import 'dart:io';
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:salesappnew/utils/local_data.dart';
+import 'package:ekareach/utils/local_data.dart';
 
 class NetworkHelper {
   /// Cek apakah perangkat terhubung ke jaringan (WiFi/Mobile)

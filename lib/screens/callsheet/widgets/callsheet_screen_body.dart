@@ -2,9 +2,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:salesappnew/bloc/auth/auth_bloc.dart';
-import 'package:salesappnew/bloc/callsheet/callsheet_bloc.dart';
-import 'package:salesappnew/screens/callsheet/widgets/callsheet_body_list.dart';
+import 'package:ekareach/bloc/auth/auth_bloc.dart';
+import 'package:ekareach/bloc/callsheet/callsheet_bloc.dart';
+import 'package:ekareach/screens/callsheet/widgets/callsheet_body_list.dart';
 
 class CallsheetScreenBody extends StatefulWidget {
   final int status;

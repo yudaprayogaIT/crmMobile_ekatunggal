@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:salesappnew/bloc/auth/auth_bloc.dart';
-import 'package:salesappnew/bloc/dn/dn_bloc.dart';
-import 'package:salesappnew/screens/dn/widgets/dn_body_list.dart';
+import 'package:ekareach/bloc/auth/auth_bloc.dart';
+import 'package:ekareach/bloc/dn/dn_bloc.dart';
+import 'package:ekareach/screens/dn/widgets/dn_body_list.dart';
 
 class DnScreenBody extends StatefulWidget {
   final int status;

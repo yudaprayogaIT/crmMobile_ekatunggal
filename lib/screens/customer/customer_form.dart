@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:photo_view/photo_view.dart';
-import 'package:salesappnew/bloc/customer/customer_bloc.dart';
-import 'package:salesappnew/utils/local_data.dart';
-import 'package:salesappnew/widgets/back_button_custom.dart';
+import 'package:ekareach/bloc/customer/customer_bloc.dart';
+import 'package:ekareach/utils/local_data.dart';
+import 'package:ekareach/widgets/back_button_custom.dart';
 import 'package:maps_launcher/maps_launcher.dart';
 
 class CustomerFormScreen extends StatelessWidget {

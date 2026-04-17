@@ -16,7 +16,7 @@
    <uses-feature android:name="android.hardware.camera.front" /> 
 
     <application
-        android:label="EKA CRM"
+        android:label="EkaReach"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon"
         android:usesCleartextTraffic="true"

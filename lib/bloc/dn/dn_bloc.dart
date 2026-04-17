@@ -3,8 +3,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:salesappnew/models/dn_model.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
+import 'package:ekareach/models/dn_model.dart';
+import 'package:ekareach/utils/fetch_data.dart';
 
 part 'dn_event.dart';
 part 'dn_state.dart';

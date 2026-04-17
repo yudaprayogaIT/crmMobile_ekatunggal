@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/bloc/invoice/invoice_bloc.dart';
-import 'package:salesappnew/widgets/back_button_custom.dart';
+import 'package:ekareach/bloc/invoice/invoice_bloc.dart';
+import 'package:ekareach/widgets/back_button_custom.dart';
 import 'package:intl/intl.dart';
 
 class InvoiceFormScreen extends StatelessWidget {

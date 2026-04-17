@@ -4,8 +4,8 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/repositories/tags_repository.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
+import 'package:ekareach/repositories/tags_repository.dart';
+import 'package:ekareach/utils/fetch_data.dart';
 
 part 'tags_event.dart';
 part 'tags_state.dart';

@@ -6,10 +6,10 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:salesappnew/bloc/auth/auth_bloc.dart';
-import 'package:salesappnew/bloc/visit/visit_bloc.dart';
-import 'package:salesappnew/screens/visit/widgets/visit_body_list.dart';
-import 'package:salesappnew/utils/local_data.dart';
+import 'package:ekareach/bloc/auth/auth_bloc.dart';
+import 'package:ekareach/bloc/visit/visit_bloc.dart';
+import 'package:ekareach/screens/visit/widgets/visit_body_list.dart';
+import 'package:ekareach/utils/local_data.dart';
 
 class VisitBody extends StatefulWidget {
   final int status;

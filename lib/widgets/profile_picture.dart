@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/bloc/user/user_bloc.dart';
-import 'package:salesappnew/models/user_model.dart';
-import 'package:salesappnew/screens/user/user_setting.dart';
-import 'package:salesappnew/utils/local_data.dart';
+import 'package:ekareach/bloc/user/user_bloc.dart';
+import 'package:ekareach/models/user_model.dart';
+import 'package:ekareach/screens/user/user_setting.dart';
+import 'package:ekareach/utils/local_data.dart';
 
 class ProfilePicture extends StatelessWidget {
   UserModel data;

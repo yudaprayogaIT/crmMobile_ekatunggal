@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:intl/intl.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
-import 'package:salesappnew/models/invoice_model.dart';
+import 'package:ekareach/utils/fetch_data.dart';
+import 'package:ekareach/models/invoice_model.dart';
 
 part 'invoice_event.dart';
 part 'invoice_state.dart';

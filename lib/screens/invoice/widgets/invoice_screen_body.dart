@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:salesappnew/bloc/auth/auth_bloc.dart';
-import 'package:salesappnew/bloc/invoice/invoice_bloc.dart';
-import 'package:salesappnew/screens/invoice/widgets/invoice_body_list.dart';
+import 'package:ekareach/bloc/auth/auth_bloc.dart';
+import 'package:ekareach/bloc/invoice/invoice_bloc.dart';
+import 'package:ekareach/screens/invoice/widgets/invoice_body_list.dart';
 
 class InvoiceScreenBody extends StatefulWidget {
   final int status;

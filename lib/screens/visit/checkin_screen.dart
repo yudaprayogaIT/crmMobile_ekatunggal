@@ -6,12 +6,12 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:salesappnew/bloc/customer/customer_bloc.dart';
-import 'package:salesappnew/bloc/gps/gps_bloc.dart';
-import 'package:salesappnew/bloc/visit/visit_bloc.dart';
-// import 'package:salesappnew/config/Config.dart';
-import 'package:salesappnew/models/key_value_model.dart';
-import 'package:salesappnew/utils/local_data.dart';
+import 'package:ekareach/bloc/customer/customer_bloc.dart';
+import 'package:ekareach/bloc/gps/gps_bloc.dart';
+import 'package:ekareach/bloc/visit/visit_bloc.dart';
+// import 'package:ekareach/config/Config.dart';
+import 'package:ekareach/models/key_value_model.dart';
+import 'package:ekareach/utils/local_data.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class CheckInScreen extends StatefulWidget {

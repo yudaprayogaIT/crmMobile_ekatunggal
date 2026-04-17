@@ -4,9 +4,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:salesappnew/bloc/gps/gps_bloc.dart';
+import 'package:ekareach/bloc/gps/gps_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:salesappnew/bloc/visit/visit_bloc.dart';
+import 'package:ekareach/bloc/visit/visit_bloc.dart';
 
 class VisitCheckOut extends StatefulWidget {
   VisitBloc visitBloc;

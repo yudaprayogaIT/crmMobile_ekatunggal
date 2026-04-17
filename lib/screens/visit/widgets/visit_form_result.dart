@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/bloc/note/note_bloc.dart';
-import 'package:salesappnew/bloc/visit/visit_bloc.dart';
+import 'package:ekareach/bloc/note/note_bloc.dart';
+import 'package:ekareach/bloc/visit/visit_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:salesappnew/screens/visit/widgets/form_note.dart';
+import 'package:ekareach/screens/visit/widgets/form_note.dart';
 
 class VisitFormResult extends StatelessWidget {
   String visitId;

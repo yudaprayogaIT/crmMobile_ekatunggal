@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:salesappnew/bloc/auth/auth_bloc.dart';
-import 'package:salesappnew/repositories/auth_repository.dart';
-import 'package:salesappnew/utils/local_data.dart';
-// import 'package:salesappnew/utils/local_data.dart';
+import 'package:ekareach/bloc/auth/auth_bloc.dart';
+import 'package:ekareach/repositories/auth_repository.dart';
+import 'package:ekareach/utils/local_data.dart';
+// import 'package:ekareach/utils/local_data.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({
@@ -28,7 +28,8 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   void initState() {
     super.initState();
-    LocalData().setData("url", "https://apicrm.ekatunggal.com/");
+    // LocalData().setData("url", "https://apicrm.ekatunggal.com/"); nanti kembalikan ke url default setelah logout, jangan lupa update juga di login screen
+    LocalData().setData("url", "https://apicrm-dev.ekatunggal.com/");
   }
 
   @override
@@ -36,22 +37,23 @@ class _LoginScreenState extends State<LoginScreen> {
     final authBloc = BlocProvider.of<AuthBloc>(context);
     final AuthBloc bloc = AuthBloc(AuthRepository());
     Map<String, String> options = {
-      'Bogor': 'https://apicrm.ekatunggal.com/',
-      'Klaten': 'https://apicrm-klt.ekatunggal.com/',
-      'Kupang': 'https://apicrm-kpg.ekatunggal.com/',
-      'Makassar': 'https://apicrm-mks.ekatunggal.com/',
-      'Manado': 'https://apicrm-mnd.ekatunggal.com/',
-      'Medan': 'https://apicrm-mdn.ekatunggal.com/',
-      'Palembang': 'https://apicrm-plb.ekatunggal.com/',
-      'Palu': 'https://apicrm-palu.ekatunggal.com/',
-      'Pekanbaru': 'https://apicrm-pkn.ekatunggal.com/',
-      'Pontianak': 'https://apicrm-pnt.ekatunggal.com/',
-      'Semarang': 'https://apicrm-smg.ekatunggal.com/',
-      'Samarinda': 'https://apicrm-smd.ekatunggal.com/',
-      'Surabaya': 'https://apicrm-sby.ekatunggal.com/',
-      'Development': 'https://apicrm-dev.ekatunggal.com/',
+      // 'Bogor': 'https://apicrm.ekatunggal.com/',
+      // 'Klaten': 'https://apicrm-klt.ekatunggal.com/',
+      // 'Kupang': 'https://apicrm-kpg.ekatunggal.com/',
+      // 'Makassar': 'https://apicrm-mks.ekatunggal.com/',
+      // 'Manado': 'https://apicrm-mnd.ekatunggal.com/',
+      // 'Medan': 'https://apicrm-mdn.ekatunggal.com/',
+      // 'Palembang': 'https://apicrm-plb.ekatunggal.com/',
+      // 'Palu': 'https://apicrm-palu.ekatunggal.com/',
+      // 'Pekanbaru': 'https://apicrm-pkn.ekatunggal.com/',
+      // 'Pontianak': 'https://apicrm-pnt.ekatunggal.com/',
+      // 'Semarang': 'https://apicrm-smg.ekatunggal.com/',
+      // 'Samarinda': 'https://apicrm-smd.ekatunggal.com/',
+      // 'Surabaya': 'https://apicrm-sby.ekatunggal.com/',
+      // 'Development': 'https://apicrm-dev.ekatunggal.com/',
+      'BGR': 'https://apicrm-dev.ekatunggal.com/',
+      // update tipe data phone di model user, phone diubah dari num/int jadi string di salesbackend
     };
-    // String? _selectedValue = 'https://apicrm.ekatunggal.com/';
 
     return Scaffold(
       body: BlocBuilder<AuthBloc, AuthState>(
@@ -179,7 +181,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 20,
                 ),
                 Text(
-                  "Version 2.0.0",
+                  "Version 2.0.1",
                   style: TextStyle(
                     color: Colors.grey[400],
                   ),

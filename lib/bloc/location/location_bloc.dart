@@ -7,8 +7,8 @@ import 'package:flutter/services.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:meta/meta.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
-import 'package:salesappnew/utils/location_gps.dart';
+import 'package:ekareach/utils/fetch_data.dart';
+import 'package:ekareach/utils/location_gps.dart';
 
 part 'location_event.dart';
 part 'location_state.dart';

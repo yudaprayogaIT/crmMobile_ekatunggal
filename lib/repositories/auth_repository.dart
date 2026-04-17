@@ -1,7 +1,7 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:salesappnew/config/Config.dart';
-import 'package:salesappnew/utils/local_data.dart';
+import 'package:ekareach/config/Config.dart';
+import 'package:ekareach/utils/local_data.dart';
 
 Config config = Config();
 LocalData localData = LocalData();

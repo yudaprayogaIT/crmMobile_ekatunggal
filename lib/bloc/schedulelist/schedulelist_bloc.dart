@@ -3,8 +3,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:meta/meta.dart';
-import 'package:salesappnew/models/schedulelist_model.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
+import 'package:ekareach/models/schedulelist_model.dart';
+import 'package:ekareach/utils/fetch_data.dart';
 
 part 'schedulelist_event.dart';
 part 'schedulelist_state.dart';

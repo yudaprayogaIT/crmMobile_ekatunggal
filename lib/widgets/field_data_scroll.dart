@@ -6,12 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:salesappnew/helper/network_helper.dart';
-import 'package:salesappnew/models/naming_series_model.dart';
-import 'package:salesappnew/services/hive_service.dart';
+import 'package:ekareach/helper/network_helper.dart';
+import 'package:ekareach/models/naming_series_model.dart';
+import 'package:ekareach/services/hive_service.dart';
 
-import 'package:salesappnew/utils/fetch_data.dart';
-import 'package:salesappnew/utils/local_data.dart';
+import 'package:ekareach/utils/fetch_data.dart';
+import 'package:ekareach/utils/local_data.dart';
 
 class Endpoint {
   Data data;

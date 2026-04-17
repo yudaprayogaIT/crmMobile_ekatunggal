@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:salesappnew/bloc/visit/visit_bloc.dart';
-import 'package:salesappnew/screens/visit/widgets/visit_body.dart';
-import 'package:salesappnew/screens/visit/widgets/visit_modal_insert.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
-import 'package:salesappnew/widgets/back_button_custom.dart';
-import 'package:salesappnew/widgets/field_custom.dart';
-import 'package:salesappnew/widgets/field_data_scroll.dart';
+import 'package:ekareach/bloc/visit/visit_bloc.dart';
+import 'package:ekareach/screens/visit/widgets/visit_body.dart';
+import 'package:ekareach/screens/visit/widgets/visit_modal_insert.dart';
+import 'package:ekareach/utils/fetch_data.dart';
+import 'package:ekareach/widgets/back_button_custom.dart';
+import 'package:ekareach/widgets/field_custom.dart';
+import 'package:ekareach/widgets/field_data_scroll.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class VisitScreen extends StatefulWidget {

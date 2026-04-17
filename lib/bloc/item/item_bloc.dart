@@ -3,9 +3,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:salesappnew/models/item_model.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
-import 'package:salesappnew/utils/local_data.dart';
+import 'package:ekareach/models/item_model.dart';
+import 'package:ekareach/utils/fetch_data.dart';
+import 'package:ekareach/utils/local_data.dart';
 import 'package:jwt_decode/jwt_decode.dart';
 
 part 'item_event.dart';

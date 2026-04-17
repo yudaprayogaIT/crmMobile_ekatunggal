@@ -1,11 +1,11 @@
 // ignore_for_file: unnecessary_type_check
 
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:salesappnew/models/customer_model.dart' as customer;
-import 'package:salesappnew/models/naming_series_model.dart' as naming_series;
-import 'package:salesappnew/models/group_model.dart' as group;
-import 'package:salesappnew/models/branch_model.dart' as branch;
-import 'package:salesappnew/services/sync_service.dart';
+import 'package:ekareach/models/customer_model.dart' as customer;
+import 'package:ekareach/models/naming_series_model.dart' as naming_series;
+import 'package:ekareach/models/group_model.dart' as group;
+import 'package:ekareach/models/branch_model.dart' as branch;
+import 'package:ekareach/services/sync_service.dart';
 
 class HiveService {
   static Future<void> init() async {

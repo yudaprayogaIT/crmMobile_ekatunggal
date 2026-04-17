@@ -5,14 +5,14 @@ import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/bloc/note/note_bloc.dart';
-import 'package:salesappnew/bloc/tags/tags_bloc.dart';
-import 'package:salesappnew/bloc/visit/visit_bloc.dart';
-import 'package:salesappnew/models/key_value_model.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
-import 'package:salesappnew/widgets/back_button_custom.dart';
-import 'package:salesappnew/widgets/custom_field.dart';
-import 'package:salesappnew/widgets/field_data_scroll.dart';
+import 'package:ekareach/bloc/note/note_bloc.dart';
+import 'package:ekareach/bloc/tags/tags_bloc.dart';
+import 'package:ekareach/bloc/visit/visit_bloc.dart';
+import 'package:ekareach/models/key_value_model.dart';
+import 'package:ekareach/utils/fetch_data.dart';
+import 'package:ekareach/widgets/back_button_custom.dart';
+import 'package:ekareach/widgets/custom_field.dart';
+import 'package:ekareach/widgets/field_data_scroll.dart';
 
 class FormNote extends StatefulWidget {
   String? noteId;

@@ -3,7 +3,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:meta/meta.dart';
-import 'package:salesappnew/repositories/memo_repository.dart';
+import 'package:ekareach/repositories/memo_repository.dart';
 
 part 'memo_event.dart';
 part 'memo_state.dart';

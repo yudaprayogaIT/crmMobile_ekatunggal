@@ -6,9 +6,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_contacts/flutter_contacts.dart';
 import 'package:get/get.dart';
 
-import 'package:salesappnew/bloc/contact/contact_bloc.dart';
-import 'package:salesappnew/models/key_value_model.dart';
-import 'package:salesappnew/widgets/custom_field.dart';
+import 'package:ekareach/bloc/contact/contact_bloc.dart';
+import 'package:ekareach/models/key_value_model.dart';
+import 'package:ekareach/widgets/custom_field.dart';
 
 class ContactFormScreen extends StatefulWidget {
   final ContactBloc contactBloc;

@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:salesappnew/bloc/customer/customer_bloc.dart';
-import 'package:salesappnew/screens/customer/widget/customer_screen_body.dart';
-import 'package:salesappnew/widgets/back_button_custom.dart';
+import 'package:ekareach/bloc/customer/customer_bloc.dart';
+import 'package:ekareach/screens/customer/widget/customer_screen_body.dart';
+import 'package:ekareach/widgets/back_button_custom.dart';
 
 class CustomerScreen extends StatefulWidget {
   const CustomerScreen({super.key});

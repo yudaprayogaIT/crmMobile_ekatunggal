@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/bloc/callsheet/callsheet_bloc.dart';
-import 'package:salesappnew/bloc/note/note_bloc.dart';
+import 'package:ekareach/bloc/callsheet/callsheet_bloc.dart';
+import 'package:ekareach/bloc/note/note_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:salesappnew/screens/callsheet/widgets/callsheet_form_note.dart';
+import 'package:ekareach/screens/callsheet/widgets/callsheet_form_note.dart';
 
 class CallsheetFormResult extends StatelessWidget {
   String callsheetId;

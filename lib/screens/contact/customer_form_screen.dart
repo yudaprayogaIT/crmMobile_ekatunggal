@@ -1,10 +1,10 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first, must_be_immutable
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:salesappnew/bloc/branch/branch_bloc.dart';
-import 'package:salesappnew/bloc/customer/customer_bloc.dart';
-import 'package:salesappnew/models/key_value_model.dart';
-import 'package:salesappnew/widgets/custom_field.dart';
+import 'package:ekareach/bloc/branch/branch_bloc.dart';
+import 'package:ekareach/bloc/customer/customer_bloc.dart';
+import 'package:ekareach/models/key_value_model.dart';
+import 'package:ekareach/widgets/custom_field.dart';
 
 class CustomerFormScreen extends StatefulWidget {
   CustomerBloc bloc;

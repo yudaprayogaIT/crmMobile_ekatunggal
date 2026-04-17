@@ -1,13 +1,13 @@
 import 'dart:async';
 
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:salesappnew/helper/network_helper.dart';
-import 'package:salesappnew/models/customer_model.dart';
-import 'package:salesappnew/models/group_model.dart';
-import 'package:salesappnew/models/branch_model.dart' as branch;
-import 'package:salesappnew/models/naming_series_model.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
-import 'package:salesappnew/utils/local_data.dart';
+import 'package:ekareach/helper/network_helper.dart';
+import 'package:ekareach/models/customer_model.dart';
+import 'package:ekareach/models/group_model.dart';
+import 'package:ekareach/models/branch_model.dart' as branch;
+import 'package:ekareach/models/naming_series_model.dart';
+import 'package:ekareach/utils/fetch_data.dart';
+import 'package:ekareach/utils/local_data.dart';
 import 'hive_service.dart';
 
 enum SyncMode {

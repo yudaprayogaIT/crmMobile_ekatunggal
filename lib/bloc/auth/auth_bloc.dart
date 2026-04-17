@@ -4,16 +4,17 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:meta/meta.dart';
-import 'package:salesappnew/repositories/auth_repository.dart';
+import 'package:ekareach/repositories/auth_repository.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter/material.dart';
-import 'package:salesappnew/utils/local_data.dart';
+import 'package:ekareach/utils/local_data.dart';
 part 'auth_event.dart';
 part 'auth_state.dart';
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   bool isPasswordVisible = false;
-  String url = "https://apicrm.ekatunggal.com/";
+  // String url = "https://apicrm.ekatunggal.com/"; nanti kembalikan ke url default setelah logout, jangan lupa update juga di login screen
+  String url = "https://apicrm-dev.ekatunggal.com/";
   final AuthRepository repository;
 
   AuthBloc(this.repository) : super(AuthInitial()) {
@@ -64,8 +65,11 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
           try {
             // emit(AuthLoading());
             await repository.logout();
-            await LocalData().setData("url", "https://apicrm.ekatunggal.com/");
-            url = "https://apicrm.ekatunggal.com/";
+            // await LocalData().setData("url", "https://apicrm.ekatunggal.com/"); nanti kembalikan ke url default setelah logout, jangan lupa update juga di login screen
+            await LocalData()
+                .setData("url", "https://apicrm-dev.ekatunggal.com/");
+            // url = "https://apicrm.ekatunggal.com/"; nanti kembalikan ke url default setelah logout, jangan lupa update juga di login screen
+            url = "https://apicrm-dev.ekatunggal.com/";
             emit(AuthUnauthenticated());
             Get.offAllNamed('/login');
           } catch (e) {

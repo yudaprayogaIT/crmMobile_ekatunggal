@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:salesappnew/screens/dn/dn_form.dart';
+import 'package:ekareach/screens/dn/dn_form.dart';
 
 class DnBodyList extends StatelessWidget {
   Map<String, dynamic> data;

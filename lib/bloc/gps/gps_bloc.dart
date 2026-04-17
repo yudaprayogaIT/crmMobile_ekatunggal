@@ -5,11 +5,11 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
 import 'package:location/location.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:salesappnew/models/result_location_model.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
-import 'package:salesappnew/utils/get_permission.dart';
-import 'package:salesappnew/utils/location_gps.dart';
-import 'package:salesappnew/utils/tools.dart';
+import 'package:ekareach/models/result_location_model.dart';
+import 'package:ekareach/utils/fetch_data.dart';
+import 'package:ekareach/utils/get_permission.dart';
+import 'package:ekareach/utils/location_gps.dart';
+import 'package:ekareach/utils/tools.dart';
 
 part 'gps_event.dart';
 part 'gps_state.dart';

@@ -5,9 +5,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:bloc/bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/models/key_value_model.dart';
-import 'package:salesappnew/models/visitnotes_model.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
+import 'package:ekareach/models/key_value_model.dart';
+import 'package:ekareach/models/visitnotes_model.dart';
+import 'package:ekareach/utils/fetch_data.dart';
 
 part 'visitnote_event.dart';
 part 'visitnote_state.dart';

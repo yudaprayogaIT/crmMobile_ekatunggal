@@ -3,20 +3,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/bloc/auth/auth_bloc.dart';
-import 'package:salesappnew/bloc/customer/customer_bloc.dart';
-import 'package:salesappnew/bloc/gps/gps_bloc.dart';
-import 'package:salesappnew/bloc/memo/memo_bloc.dart';
-import 'package:salesappnew/bloc/user/user_bloc.dart';
-import 'package:salesappnew/bloc/visit/visit_bloc.dart';
-import 'package:salesappnew/config/Config.dart';
-import 'package:salesappnew/models/key_value_model.dart';
-import 'package:salesappnew/models/result_location_model.dart';
-import 'package:salesappnew/screens/home/widgets/menu_list.dart';
+import 'package:ekareach/bloc/auth/auth_bloc.dart';
+import 'package:ekareach/bloc/customer/customer_bloc.dart';
+import 'package:ekareach/bloc/gps/gps_bloc.dart';
+import 'package:ekareach/bloc/memo/memo_bloc.dart';
+import 'package:ekareach/bloc/user/user_bloc.dart';
+import 'package:ekareach/bloc/visit/visit_bloc.dart';
+import 'package:ekareach/config/Config.dart';
+import 'package:ekareach/models/key_value_model.dart';
+import 'package:ekareach/models/result_location_model.dart';
+import 'package:ekareach/screens/home/widgets/menu_list.dart';
 import 'package:intl/intl.dart';
-import 'package:salesappnew/screens/visit/widgets/visit_modal_insert.dart';
-import 'package:salesappnew/utils/location_gps.dart';
-import 'package:salesappnew/widgets/drawer_widget.dart';
+import 'package:ekareach/screens/visit/widgets/visit_modal_insert.dart';
+import 'package:ekareach/utils/location_gps.dart';
+import 'package:ekareach/widgets/drawer_widget.dart';
 
 // ignore: must_be_immutable
 class HomeScreen extends StatefulWidget {

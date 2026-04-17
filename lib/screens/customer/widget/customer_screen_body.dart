@@ -2,8 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:salesappnew/bloc/customer/customer_bloc.dart';
-import 'package:salesappnew/screens/customer/customer_form.dart';
+import 'package:ekareach/bloc/customer/customer_bloc.dart';
+import 'package:ekareach/screens/customer/customer_form.dart';
 
 class CustomerScreenBody extends StatefulWidget {
   final int status;

@@ -4,7 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
+import 'package:ekareach/utils/fetch_data.dart';
 import 'package:flutter_contacts/flutter_contacts.dart';
 
 part 'contact_event.dart';

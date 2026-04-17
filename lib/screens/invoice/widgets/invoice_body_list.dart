@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:salesappnew/screens/invoice/invoice_form.dart';
+import 'package:ekareach/screens/invoice/invoice_form.dart';
 
 class InvoiceBodyList extends StatelessWidget {
   Map<String, dynamic> data;

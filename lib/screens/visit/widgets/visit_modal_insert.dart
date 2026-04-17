@@ -3,14 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/bloc/gps/gps_bloc.dart';
-import 'package:salesappnew/bloc/visit/visit_bloc.dart';
-import 'package:salesappnew/models/key_value_model.dart';
-import 'package:salesappnew/screens/visit/checkin_screen.dart';
-import 'package:salesappnew/services/hive_service.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
-import 'package:salesappnew/widgets/field_data_scroll.dart';
-import 'package:salesappnew/screens/callsheet/widgets/customer_form_widget.dart';
+import 'package:ekareach/bloc/gps/gps_bloc.dart';
+import 'package:ekareach/bloc/visit/visit_bloc.dart';
+import 'package:ekareach/models/key_value_model.dart';
+import 'package:ekareach/screens/visit/checkin_screen.dart';
+import 'package:ekareach/services/hive_service.dart';
+import 'package:ekareach/utils/fetch_data.dart';
+import 'package:ekareach/widgets/field_data_scroll.dart';
+import 'package:ekareach/screens/callsheet/widgets/customer_form_widget.dart';
 
 class VisitModalInsert extends StatefulWidget {
   VisitBloc bloc;

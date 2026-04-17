@@ -7,17 +7,17 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:salesappnew/bloc/contact/contact_bloc.dart';
-import 'package:salesappnew/bloc/visit/visit_bloc.dart';
-// import 'package:salesappnew/config/Config.dart';
-import 'package:salesappnew/models/key_value_model.dart';
-import 'package:salesappnew/screens/callsheet/widgets/customer_form_widget.dart';
-import 'package:salesappnew/screens/contact/contact_form_screen.dart';
-import 'package:salesappnew/screens/visit/checkin_screen.dart';
-import 'package:salesappnew/screens/visit/widgets/checkout_screen.dart';
-import 'package:salesappnew/utils/fetch_data.dart';
-import 'package:salesappnew/widgets/custom_field.dart';
-import 'package:salesappnew/widgets/field_data_scroll.dart';
+import 'package:ekareach/bloc/contact/contact_bloc.dart';
+import 'package:ekareach/bloc/visit/visit_bloc.dart';
+// import 'package:ekareach/config/Config.dart';
+import 'package:ekareach/models/key_value_model.dart';
+import 'package:ekareach/screens/callsheet/widgets/customer_form_widget.dart';
+import 'package:ekareach/screens/contact/contact_form_screen.dart';
+import 'package:ekareach/screens/visit/checkin_screen.dart';
+import 'package:ekareach/screens/visit/widgets/checkout_screen.dart';
+import 'package:ekareach/utils/fetch_data.dart';
+import 'package:ekareach/widgets/custom_field.dart';
+import 'package:ekareach/widgets/field_data_scroll.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class VisitFormInfo extends StatefulWidget {

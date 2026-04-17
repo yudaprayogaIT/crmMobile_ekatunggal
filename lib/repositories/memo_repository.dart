@@ -1,6 +1,6 @@
 // ignore_for_file: non_constant_identifier_names
 
-import 'package:salesappnew/utils/fetch_data.dart';
+import 'package:ekareach/utils/fetch_data.dart';
 
 Future<Map<String, dynamic>> RepositoryGetAllMemo({
   List<String>? fields,

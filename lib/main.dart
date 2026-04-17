@@ -5,21 +5,21 @@ import 'package:geofence_foreground_service/constants/geofence_event_type.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:salesappnew/bloc/auth/auth_bloc.dart';
-import 'package:salesappnew/bloc/gps/gps_bloc.dart';
-import 'package:salesappnew/repositories/auth_repository.dart';
-import 'package:salesappnew/screens/callsheet/callsheet_screen.dart';
-import 'package:salesappnew/screens/customer/customer_screen.dart';
-import 'package:salesappnew/screens/dn/dn_screen.dart';
+import 'package:ekareach/bloc/auth/auth_bloc.dart';
+import 'package:ekareach/bloc/gps/gps_bloc.dart';
+import 'package:ekareach/repositories/auth_repository.dart';
+import 'package:ekareach/screens/callsheet/callsheet_screen.dart';
+import 'package:ekareach/screens/customer/customer_screen.dart';
+import 'package:ekareach/screens/dn/dn_screen.dart';
 
-// import 'package:salesappnew/screens/facedetector/fc_register_screen.dart';
-import 'package:salesappnew/screens/home/home_screen.dart';
-import 'package:salesappnew/screens/invoice/invoice_screen.dart';
-import 'package:salesappnew/screens/item/item_screen.dart';
-import 'package:salesappnew/screens/login_screen.dart';
-import 'package:salesappnew/screens/order/order_screen.dart';
-// import 'package:salesappnew/screens/visit/checkin_screen.dart';
-import 'package:salesappnew/screens/visit/visit_screen.dart';
+// import 'package:ekareach/screens/facedetector/fc_register_screen.dart';
+import 'package:ekareach/screens/home/home_screen.dart';
+import 'package:ekareach/screens/invoice/invoice_screen.dart';
+import 'package:ekareach/screens/item/item_screen.dart';
+import 'package:ekareach/screens/login_screen.dart';
+import 'package:ekareach/screens/order/order_screen.dart';
+// import 'package:ekareach/screens/visit/checkin_screen.dart';
+import 'package:ekareach/screens/visit/visit_screen.dart';
 import 'package:geofence_foreground_service/geofence_foreground_service.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'dart:async';
@@ -29,9 +29,9 @@ import 'package:geofence_foreground_service/models/notification_icon_data.dart';
 import 'package:geofence_foreground_service/models/zone.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:salesappnew/models/callsheet_model.dart';
-import 'package:salesappnew/services/hive_service.dart';
-import 'package:salesappnew/services/sync_service.dart';
+import 'package:ekareach/models/callsheet_model.dart';
+import 'package:ekareach/services/hive_service.dart';
+import 'package:ekareach/services/sync_service.dart';
 
 class MyHttpOverrides extends HttpOverrides {
   @override

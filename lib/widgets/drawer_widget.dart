@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:salesappnew/bloc/auth/auth_bloc.dart';
-import 'package:salesappnew/bloc/user/user_bloc.dart';
-import 'package:salesappnew/widgets/profile_picture.dart';
+import 'package:ekareach/bloc/auth/auth_bloc.dart';
+import 'package:ekareach/bloc/user/user_bloc.dart';
+import 'package:ekareach/widgets/profile_picture.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({
