@@ -170,12 +170,7 @@ class MyApp extends StatelessWidget {
           create: (context) => authBloc,
         ),
         BlocProvider<GpsBloc>(
-          create: (context) => GpsBloc()
-            ..add(
-              GpsGetEnable(
-                distanceFilter: 2,
-              ),
-            ),
+          create: (context) => GpsBloc(),
         ),
       ],
       child: GetMaterialApp(

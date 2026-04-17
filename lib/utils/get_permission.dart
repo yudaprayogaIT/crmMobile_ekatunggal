@@ -2,14 +2,16 @@ import 'package:permission_handler/permission_handler.dart';
 
 class GetPermission {
   static Future<bool> askLocation() async {
-    PermissionStatus status = await Permission.location.request();
-    if (status.isDenied) {
-      return askLocation();
-    } else if (status.isPermanentlyDenied) {
-      await openAppSettings();
-      return askLocation();
-    } else {
+    final status = await Permission.location.request();
+
+    if (status.isGranted || status.isLimited || status.isProvisional) {
       return true;
     }
+
+    if (status.isPermanentlyDenied || status.isRestricted) {
+      await openAppSettings();
+    }
+
+    return false;
   }
 }

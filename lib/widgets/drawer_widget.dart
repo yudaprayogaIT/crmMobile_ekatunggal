@@ -297,7 +297,7 @@ class DrawerWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(10),
             child: Text(
-              'Version 2.0.0',
+              'Version 2.0.1',
               style: TextStyle(
                 color: Colors.grey[500],
                 fontStyle: FontStyle.italic,
