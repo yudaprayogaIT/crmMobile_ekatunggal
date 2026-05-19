@@ -179,7 +179,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 20,
                 ),
                 Text(
-                  "Version 2.0.0",
+                  "Version 2.0.2",
                   style: TextStyle(
                     color: Colors.grey[400],
                   ),

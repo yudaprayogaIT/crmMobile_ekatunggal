@@ -26,6 +26,8 @@ enum Data {
   note,
   topic,
   workflowState,
+  workflow,
+  workflowTransition,
   schedulelist,
 }
 
@@ -87,6 +89,12 @@ class FetchData {
         break;
       case Data.workflowState:
         doc = "workflowstate";
+        break;
+      case Data.workflow:
+        doc = "workflow";
+        break;
+      case Data.workflowTransition:
+        doc = "workflowtransition";
         break;
       case Data.schedulelist:
         doc = "schedulelist";

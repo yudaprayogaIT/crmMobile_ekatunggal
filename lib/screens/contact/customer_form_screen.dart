@@ -149,7 +149,6 @@ class _CustomerFormScreenState extends State<CustomerFormScreen> {
                     'branch': branch!.value,
                     'customerGroup': widget.group!.value!,
                     'status': "1",
-                    "workflowState": 'Prospek',
                   },
                 ),
               );

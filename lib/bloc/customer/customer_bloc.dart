@@ -132,7 +132,6 @@ class CustomerBloc extends Bloc<CustomerEvent, CustomerState> {
       //   'erpId': 'kk',
       //   'createdBy': '64800e61cc19aff39f62d4ea',
       //   'status': 1,
-      //   'workflowState': 'Prospek',
       //   'createdAt': '2025-08-06T06:51:58.300Z',
       //   'updatedAt': '2025-08-06T06:51:58.300Z',
       //   '__v': 0
@@ -144,9 +143,10 @@ class CustomerBloc extends Bloc<CustomerEvent, CustomerState> {
       bool connected = await NetworkHelper.canReachServer();
 
       if (connected) {
+        final data = await _setInitialWorkflowState(event.data);
         // ✅ Online → Kirim langsung ke server
         Map<String, dynamic> result =
-            await FetchData(data: Data.customer).ADD(event.data);
+            await FetchData(data: Data.customer).ADD(data);
 
         if (result['status'] != 200) {
           throw result['msg'];
@@ -162,15 +162,15 @@ class CustomerBloc extends Bloc<CustomerEvent, CustomerState> {
           item: customer,
           box: HiveService.customerBox,
         );
-        print(customer.id);
-        print(customer.name);
+        // print(customer.id);
+        // print(customer.name);
         var localcustomer = HiveService.getById(
           customer.id!,
           HiveService.customerBox,
         );
 
-        print("ds");
-        print(localcustomer?.name);
+        // print("ds");
+        // print(localcustomer?.name);
 
         if (!event.callBackValue) {
           Get.back();
@@ -179,11 +179,12 @@ class CustomerBloc extends Bloc<CustomerEvent, CustomerState> {
         }
       } else {
         // ❌ Offline → Simpan ke Hive dulu
+        final data = await _setCachedInitialWorkflowState(event.data);
         final customerBox = HiveService.customerBox;
 
         final offlineId = DateTime.now().millisecondsSinceEpoch.toString();
-        print(event.data);
-        final offlineCustomer = CustomerModel.fromJson(event.data);
+        // print(event.data);
+        final offlineCustomer = CustomerModel.fromJson(data);
         offlineCustomer.id = offlineId;
         offlineCustomer.isSynced = false;
 
@@ -211,6 +212,72 @@ class CustomerBloc extends Bloc<CustomerEvent, CustomerState> {
       EasyLoading.dismiss();
       emit(CustomerIsFailure(e.toString()));
     }
+  }
+
+  Future<Map<String, dynamic>> _setInitialWorkflowState(
+    Map<String, dynamic> data,
+  ) async {
+    final workflowResult = await FetchData(data: Data.workflow).FINDALL(
+      filters: [
+        ["name", "=", "Customer Workflow"]
+      ],
+      limit: 1,
+    );
+
+    if (workflowResult['status'] != 200) {
+      throw workflowResult['msg'];
+    }
+
+    final workflows = workflowResult['data'] as List;
+    if (workflows.isEmpty) {
+      throw "Customer Workflow tidak ditemukan.";
+    }
+
+    final workflowId = workflows.first['_id'];
+    final transitionResult =
+        await FetchData(data: Data.workflowTransition).FINDALL(
+      filters: [
+        ["workflow", "=", workflowId]
+      ],
+    );
+
+    if (transitionResult['status'] != 200) {
+      throw transitionResult['msg'];
+    }
+
+    final transitions = transitionResult['data'] as List;
+    final draftTransition = transitions.firstWhere(
+      (item) => item['stateActive']?['name'] == "Draft",
+      orElse: () => null,
+    );
+
+    final nextState = draftTransition?['nextState']?['name'];
+    if (nextState == null || nextState == "") {
+      throw "Transition awal Draft untuk Customer Workflow tidak ditemukan.";
+    }
+
+    await LocalData().setData("customerInitialWorkflowState", nextState);
+
+    return {
+      ...data,
+      "workflowState": nextState,
+    };
+  }
+
+  Future<Map<String, dynamic>> _setCachedInitialWorkflowState(
+    Map<String, dynamic> data,
+  ) async {
+    final workflowState =
+        await LocalData().getData("customerInitialWorkflowState");
+
+    if (workflowState == null || workflowState == "") {
+      return data;
+    }
+
+    return {
+      ...data,
+      "workflowState": workflowState,
+    };
   }
 
   // Future<void> _GetAllData(

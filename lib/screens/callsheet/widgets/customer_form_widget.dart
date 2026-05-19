@@ -154,7 +154,6 @@ class _CustomerFormWidgetState extends State<CustomerFormWidget> {
                             "customerGroup": bloc.group?.value,
                             "name": nameC.text,
                             "status": "1",
-                            "workflowState": "Prospek"
                           },
                         ),
                       );
